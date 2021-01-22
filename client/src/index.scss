@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  width: 0px;
+}
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 0px;
+}
+html {
+  font-size: 10px;
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    table {
+      min-width: 600px;
+      text-align: left;
+      th {
+        padding: 1rem;
+        background: rgb(222, 234, 246);
+      }
+      td {
+        padding: 0.5rem;
+        padding-left: 1rem;
+      }
+    }
+
+    header {
+      background: rgb(91, 155, 213);
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+
+    .sidebar {
+      width: 15%;
+      height: calc(100vh - 40px);
+      background: rgb(91, 155, 213);
+      a {
+        display: block;
+        padding: 0.5rem 2rem;
+        color: #333;
+        text-decoration: none;
+        &.active {
+          background-color: rgb(255, 192, 0);
+        }
+      }
+    }
+
+    .main {
+      width: 85%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      padding: 3rem;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      input,
+      select {
+        border: 2px solid #5b9bd5;
+        padding: 0.5rem;
+        border-radius: 15px;
+        min-width: 180px;
+      }
+      & > button {
+        background-color: #5b9bd5;
+        padding: 1rem 0.5rem;
+        text-transform: capitalize;
+        border: 1px solid #333;
+      }
+    }
+
+    .success {
+      color: green;
+      font-size: 1.3rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    .error {
+      color: red;
+      font-size: 1.3rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  }
+}
